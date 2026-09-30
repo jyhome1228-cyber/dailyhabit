@@ -1,302 +1,169 @@
 @media (max-width: 1024px) {
   :root {
     --gutter: 24px;
-  }
-
-  .section {
-    padding: 110px 0;
-  }
-
-  .gnb {
-    display: none;
+    --header-height: 70px;
   }
 
   .header-inner {
     grid-template-columns: 1fr 1fr;
   }
 
-  .header-actions > a,
-  .header-actions > .text-button {
+  .desktop-nav,
+  .header-utils .utility-button,
+  .header-utils .utility-link {
     display: none;
   }
 
-  .menu-toggle {
+  .mobile-menu-button {
     display: inline-flex;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
     gap: 6px;
-    border: 0;
-    background: none;
     padding: 0;
-    cursor: pointer;
   }
 
-  .menu-toggle span {
+  .mobile-menu-button span {
     width: 24px;
     height: 1px;
     background: #111;
-    transition: .25s ease;
+    transition: .2s ease;
   }
 
-  .menu-toggle[aria-expanded="true"] span:first-child {
+  .mobile-menu-button[aria-expanded="true"] span:first-child {
     transform: translateY(3.5px) rotate(45deg);
   }
 
-  .menu-toggle[aria-expanded="true"] span:last-child {
+  .mobile-menu-button[aria-expanded="true"] span:last-child {
     transform: translateY(-3.5px) rotate(-45deg);
   }
 
-  .mobile-nav {
+  .mobile-menu {
     position: fixed;
-    z-index: 49;
-    top: 111px;
+    z-index: 90;
+    top: calc(var(--banner-height) + var(--header-height));
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 48px var(--gutter);
+    display: block;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-12px);
-    pointer-events: none;
+    transform: translateY(-10px);
     background: #fff;
-    transition: .25s ease;
+    transition: .2s ease;
+    pointer-events: none;
+    overflow-y: auto;
   }
 
-  .mobile-nav.is-open {
+  .mobile-menu.is-open {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
 
-  .mobile-nav a {
+  .mobile-menu-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 38px var(--gutter) 50px;
+  }
+
+  .mobile-menu-inner > a {
     padding: 9px 0;
     font-size: 34px;
     font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -.04em;
+    line-height: 1.15;
+    letter-spacing: -.045em;
   }
 
-  .habit-grid,
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 54px;
+  .mobile-submenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin: 8px 0 24px;
+    color: #777;
   }
 
-  .curated-layout {
-    grid-template-columns: 1fr;
-    gap: 70px;
+  .mobile-submenu a {
+    font-size: 11px;
+    font-weight: 500;
   }
 
-  .daily-pick {
-    grid-template-columns: 1fr;
+  .mobile-utility {
+    display: flex;
+    gap: 20px;
+    margin-top: 44px;
+    padding-top: 22px;
+    border-top: 1px solid var(--color-line);
   }
 
-  .daily-pick-media {
-    min-height: auto;
-    aspect-ratio: 1.2;
+  .mobile-utility a,
+  .mobile-utility button {
+    font-size: 11px;
+    font-weight: 500;
   }
 
-  .daily-pick-content {
-    min-height: 570px;
-  }
-
-  .newsletter-inner {
-    grid-template-columns: 1fr;
-    gap: 60px;
+  .footer-grid {
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 34px;
   }
 }
 
 @media (max-width: 720px) {
   :root {
     --gutter: 18px;
+    --banner-height: 32px;
+    --header-height: 64px;
   }
 
   body {
     font-size: 15px;
   }
 
-  .promo-bar {
-    min-height: 32px;
+  .top-banner {
     font-size: 10px;
   }
 
-  .header-inner {
-    min-height: 64px;
+  .site-logo {
+    font-size: 19px;
   }
 
-  .brand-logo {
-    font-size: 17px;
-  }
-
-  .mobile-nav {
-    top: 96px;
-  }
-
-  .section {
-    padding: 82px 0;
-  }
-
-  h1 {
-    font-size: clamp(48px, 15vw, 72px);
-  }
-
-  h2 {
-    font-size: 38px;
-  }
-
-  .hero,
-  .hero-content {
-    min-height: calc(100svh - 96px);
-  }
-
-  .hero-content {
-    padding-bottom: 48px;
-  }
-
-  .hero-copy {
-    font-size: 15px;
-  }
-
-  .split-heading,
-  .footer-top {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-
-  .inline-heading {
+  .search-layer {
     align-items: flex-start;
+    padding: 130px 20px 40px;
   }
 
-  .inline-heading .text-link {
-    display: none;
+  .search-close {
+    top: 24px;
+    right: 20px;
   }
 
-  .section-heading {
-    margin-bottom: 38px;
+  .home-placeholder {
+    padding: 64px 0;
   }
 
-  .section-description {
-    margin-left: 0;
-    font-size: 15px;
+  .home-placeholder h1 {
+    font-size: clamp(52px, 16vw, 78px);
   }
 
-  .habit-grid,
-  .product-grid {
-    gap: 12px;
-    row-gap: 42px;
-  }
-
-  .card-copy h3 {
-    font-size: 15px;
-  }
-
-  .card-copy p {
-    font-size: 12px;
-  }
-
-  .product-info {
-    padding-top: 13px;
-  }
-
-  .product-info h3 {
+  .home-placeholder p:last-child {
     font-size: 14px;
   }
 
-  .product-caption {
-    display: none;
-  }
-
-  .price {
-    display: block;
-    font-size: 13px;
-  }
-
-  .price del {
-    margin-left: 6px;
-  }
-
-  .curated-intro > p:not(.eyebrow) {
-    font-size: 15px;
-  }
-
-  .standard-list li {
-    grid-template-columns: 46px 1fr;
-    padding: 25px 0;
-  }
-
-  .standard-list h3 {
-    font-size: 20px;
-  }
-
-  .daily-pick-media {
-    aspect-ratio: .95;
-  }
-
-  .daily-pick-content {
-    min-height: 520px;
-    padding: 64px 22px;
-  }
-
-  .brand-story,
-  .brand-story-content {
-    min-height: 720px;
-  }
-
-  .brand-story-content h2 {
-    font-size: 52px;
-  }
-
-  .brand-story-content > p:not(.eyebrow) {
-    font-size: 17px;
-  }
-
-  .brand-story-small {
-    font-size: 13px !important;
-  }
-
-  .event-grid,
-  .journal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .event-card {
-    min-height: 380px;
-    padding: 28px;
-  }
-
-  .journal-grid {
-    gap: 48px;
-  }
-
-  .newsletter {
-    padding: 78px 0;
-  }
-
-  .newsletter-form {
-    grid-template-columns: 1fr;
-  }
-
-  .newsletter-form button {
-    width: max-content;
-    padding: 12px 0 18px;
-  }
-
   .site-footer {
-    padding-top: 60px;
+    padding-top: 58px;
   }
 
-  .footer-top {
-    padding-bottom: 60px;
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 44px 24px;
+    padding-bottom: 56px;
   }
 
-  .footer-menu {
-    gap: 16px;
+  .footer-brand {
+    grid-column: 1 / -1;
   }
 
   .footer-bottom {
