@@ -6,7 +6,7 @@
 }
 
 .sub-hero .container {
-  max-width: var(--container-content);
+  max-width: var(--container-wide);
 }
 
 .sub-hero .eyebrow { margin-bottom: var(--s2); }
@@ -886,4 +886,37 @@
   margin-top: var(--s5);
   font-size: var(--fs-12);
   font-weight: 700;
+}
+
+/* Alignment reset — major page sections share the same 1280px left/right grid */
+.container.intro-split,
+.container.journal-lead,
+.container.about-intro,
+.container.choice-cta-inner,
+.container.brand-belief-grid {
+  width: min(calc(100% - (var(--gutter) * 2)), var(--container-wide));
+  margin-inline: auto;
+}
+
+/* Temporary visual reset — final photography/artwork will replace these blanks */
+.catalog-visual,
+.featured-visual,
+.article-thumb {
+  background: var(--surface) !important;
+}
+
+.catalog-bottle,
+.featured-number,
+.featured-card,
+.featured-capsule,
+.article-number,
+.tile-shape,
+.tile-capsule,
+.category-orb {
+  display: none !important;
+}
+
+.article-thumb::before,
+.article-thumb::after {
+  display: none !important;
 }
