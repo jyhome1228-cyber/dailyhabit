@@ -694,3 +694,29 @@
   font-size: var(--fs-14);
   font-weight: 700;
 }
+
+/* Temporary visual reset — keep image areas blank until final assets arrive */
+.hero-visual,
+.routine-visual,
+.product-visual,
+.journal-visual {
+  background: var(--surface) !important;
+}
+
+.hero-shape,
+.visual-caption,
+.visual-pill,
+.visual-card-label,
+.visual-bottle,
+.product-bottle,
+.standard-art,
+.journal-number,
+.journal-prop,
+.journal-box,
+.journal-card-prop {
+  display: none !important;
+}
+
+.product-visual::after {
+  display: none !important;
+}
