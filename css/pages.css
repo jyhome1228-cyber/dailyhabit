@@ -1914,3 +1914,6 @@
   font-size: var(--fs-12);
   font-weight: 700;
 }
+
+/* Preserve square journal artwork */
+.article-thumb { aspect-ratio: 1 / 1; }
