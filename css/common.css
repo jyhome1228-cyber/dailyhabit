@@ -502,3 +502,80 @@ select:focus-visible {
     width: 104px;
   }
 }
+
+
+/* ===== FULL-BLEED COMMERCE LAYOUT ===== */
+
+/* Header spans the viewport; navigation remains centered by structure, not by a boxed container. */
+.header-inner.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-inline: 32px;
+}
+
+/* Footer: wide, divided information layout */
+.site-footer {
+  margin-top: 0;
+  padding: 0;
+  color: var(--black);
+  background: #f4f4f2;
+  border-top: 1px solid var(--line);
+}
+
+.footer-main.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  grid-template-columns: 1.35fr repeat(3, 1fr);
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-main > * {
+  min-height: 280px;
+  padding: 40px 32px;
+  border-right: 1px solid var(--line);
+}
+
+.footer-main > *:last-child {
+  border-right: 0;
+}
+
+.footer-logo {
+  color: var(--black);
+}
+
+.footer-logo img {
+  filter: none;
+}
+
+.footer-brand > p,
+.footer-contact p,
+.footer-column a,
+.footer-bottom {
+  color: var(--gray-700);
+}
+
+.footer-contact > span,
+.footer-column strong {
+  color: var(--black);
+}
+
+.footer-column a:hover {
+  color: var(--red);
+}
+
+.footer-bottom.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px 32px 24px;
+  grid-template-columns: 1fr auto auto;
+  border-top: 0;
+}
+
+.footer-social a {
+  color: var(--red);
+}
