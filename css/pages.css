@@ -1844,3 +1844,73 @@
 .utility-content {
   width: min(calc(100% - 48px), 1040px);
 }
+
+
+/* Journal image cards */
+.journal-filter nav button {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  color: #9c918e;
+  font-size: var(--fs-12);
+  font-weight: 700;
+}
+
+.journal-filter nav button.is-active,
+.journal-filter nav button:hover { color: var(--red); }
+
+.article-card.is-hidden { display: none; }
+
+.article-card-link {
+  display: block;
+  height: 100%;
+}
+
+.article-thumb {
+  display: block;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.article-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.article-card-link:hover .article-thumb img { transform: scale(1.02); }
+
+.article-copy {
+  display: block;
+  padding-top: 14px;
+}
+
+.article-copy .eyebrow {
+  display: block;
+  margin: 0 0 6px;
+}
+
+.article-title {
+  display: block;
+  margin-bottom: 7px;
+  font-size: var(--fs-18);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.article-description {
+  display: block;
+  min-height: 60px;
+  margin-bottom: 12px;
+  color: var(--gray-500);
+  font-size: var(--fs-13);
+  line-height: 1.55;
+}
+
+.article-read {
+  display: inline-flex;
+  color: var(--red);
+  font-size: var(--fs-12);
+  font-weight: 700;
+}
