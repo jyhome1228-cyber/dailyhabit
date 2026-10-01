@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="데일리해빗 공지사항">
+  <title>NOTICE — daily.habit.</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="site-logo" href="./index.html" aria-label="데일리해빗 홈"><img src="./assets/logo.svg" alt="daily.habit."></a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a class="nav-link" href="./shop.html">SHOP</a>
+        <a class="nav-link" href="./routine.html">ROUTINE</a>
+        <a class="nav-link" href="./category.html">CATEGORY</a>
+        <a class="nav-link" href="./journal.html">JOURNAL</a>
+        <a class="nav-link" href="./about.html">ABOUT</a>
+      </nav>
+      <div class="header-utils">
+        <button class="utility-button search-open" type="button">SEARCH</button>
+        <a class="utility-link" href="#">MY</a>
+        <a class="utility-link" href="#">CART <span class="cart-count">0</span></a>
+        <button class="mobile-menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="./shop.html">SHOP</a>
+        <a href="./routine.html">ROUTINE</a>
+        <a href="./category.html">CATEGORY</a>
+        <a href="./journal.html">JOURNAL</a>
+        <a href="./about.html">ABOUT</a>
+        <div class="mobile-utility"><button class="search-open" type="button">SEARCH</button><a href="#">MY PAGE</a><a href="#">CART</a></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-layer" aria-hidden="true">
+    <button class="search-close" type="button">CLOSE</button>
+    <form class="search-form">
+      <label for="siteSearch">SEARCH</label>
+      <div class="search-input-wrap"><input id="siteSearch" type="search" placeholder="검색어를 입력해주세요."><button type="submit" aria-label="검색">→</button></div>
+      <p>상품명, 카테고리 또는 루틴으로 검색해보세요.</p>
+    </form>
+  </div>
+
+  <main class="utility-page">
+    <section class="utility-hero">
+      <h1>공지사항</h1>
+    </section>
+
+    <section class="utility-content">
+      <table class="notice-table">
+        <thead>
+          <tr><th>No</th><th>제목</th><th>작성일</th></tr>
+        </thead>
+        <tbody>
+          <tr class="notice-empty"><td colspan="3">등록된 공지사항이 없습니다.</td></tr>
+        </tbody>
+      </table>
+      <div class="utility-pagination"><span>1</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="site-logo footer-logo" href="./index.html"><img src="./assets/logo.svg" alt="daily.habit."></a>
+        <p>Better Habit, Better Life</p>
+        <div class="footer-contact">
+          <span>COMPANY</span>
+          <p>주식회사 에이엘인터내셔널<br>대표자 류창호<br>사업자등록번호 272-88-02993<br>aminter0215@naver.com</p>
+        </div>
+      </div>
+      <div class="footer-column"><strong>SHOP</strong><a href="./shop.html">ALL PRODUCTS</a><a href="./category.html">BALANCE</a><a href="./category.html">BEAUTY</a><a href="./category.html">REST &amp; INNER CARE</a></div>
+      <div class="footer-column"><strong>ABOUT</strong><a href="./about.html">BRAND STORY</a><a href="./about.html#standard">OUR STANDARD</a><a href="./journal.html">JOURNAL</a><a href="#">FAQ</a></div>
+      <div class="footer-column"><strong>SUPPORT</strong><a href="./notice.html">NOTICE</a><a href="#">DELIVERY &amp; RETURN</a><a href="#">PRIVACY POLICY</a><a href="#">TERMS OF USE</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>상호명 주식회사 에이엘인터내셔널 · 대표자 류창호 · 사업자등록번호 272-88-02993<br>서울특별시 강남구 선릉로 704, 10층 640호 (청담동, 청담빌딩)<br>업태 제조업 / 도매 및 소매업 · 종목 화장품 제조업 / 상품 종합 도매업</p>
+      <div class="footer-social"><a href="#">INSTAGRAM</a><a href="#">KAKAO</a><a href="#">YOUTUBE</a></div>
+      <p>© DAILYHABIT. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
