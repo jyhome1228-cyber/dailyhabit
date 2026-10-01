@@ -727,3 +727,209 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 640px;
 }
+
+
+/* ===== HOME / FULL-BLEED OVERRIDES ===== */
+
+.main-hero {
+  padding: 0;
+}
+
+.hero-grid.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  min-height: 560px;
+}
+
+.hero-visual,
+.hero-copy-panel {
+  min-height: 560px;
+  border-radius: 0;
+}
+
+.hero-copy-panel {
+  padding: 56px 64px;
+  border-left: 1px solid var(--line);
+}
+
+.trust-strip {
+  margin-top: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-grid.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trust-grid > div {
+  min-height: 64px;
+  border-right: 1px solid var(--line);
+}
+
+.trust-grid > div:last-child {
+  border-right: 0;
+}
+
+.routine-section {
+  padding: 0;
+}
+
+.routine-layout.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.routine-card,
+.routine-card-large {
+  border-radius: 0;
+}
+
+.routine-card-large {
+  min-height: 520px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.routine-right {
+  gap: 0;
+}
+
+.focus-card,
+.routine-card-small {
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.routine-small-grid {
+  gap: 0;
+}
+
+.routine-card-small:first-child {
+  border-right: 1px solid var(--line);
+}
+
+.product-section {
+  padding: 80px 0 0;
+}
+
+.product-section > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-head {
+  padding: 0 32px;
+  margin-bottom: 40px;
+}
+
+.launch-product-grid {
+  max-width: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.launch-product-grid .product-card {
+  padding-bottom: 32px;
+  border-right: 1px solid var(--line);
+}
+
+.launch-product-grid .product-card:last-child {
+  border-right: 0;
+}
+
+.launch-product-grid .product-visual {
+  border-radius: 0;
+  aspect-ratio: 1.35 / 1;
+  border-bottom: 1px solid var(--line);
+}
+
+.launch-product-grid .product-meta,
+.launch-product-grid .product-card > h3,
+.launch-product-grid .product-card > p {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.standard-section {
+  padding: 80px 0 0;
+}
+
+.standard-section > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.standard-banner {
+  min-height: 400px;
+  border-radius: 0;
+}
+
+.standard-copy {
+  padding-left: 64px;
+}
+
+.journal-section {
+  padding: 80px 0 0;
+}
+
+.journal-section > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.journal-head {
+  padding: 0 32px;
+  margin-bottom: 40px;
+}
+
+.journal-grid {
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.journal-card {
+  padding: 0 24px 32px;
+  border-right: 1px solid var(--line);
+}
+
+.journal-card:last-child {
+  border-right: 0;
+}
+
+.journal-visual {
+  margin-inline: -24px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.newsletter-section {
+  margin-top: 0;
+}
+
+.newsletter-box.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 48px 32px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
