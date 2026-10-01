@@ -579,3 +579,130 @@ select:focus-visible {
 .footer-social a {
   color: var(--red);
 }
+
+
+/* Journal detail modal */
+.journal-modal {
+  position: fixed;
+  z-index: 500;
+  inset: 0;
+  display: none;
+}
+
+.journal-modal.is-open { display: block; }
+
+.journal-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17,17,17,.72);
+}
+
+.journal-modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: minmax(320px,.9fr) minmax(420px,1.1fr);
+  width: min(calc(100% - 64px), 1120px);
+  max-height: min(86vh, 840px);
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  background: #fff;
+}
+
+.journal-modal-close {
+  position: absolute;
+  z-index: 3;
+  top: 16px;
+  right: 20px;
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-700);
+  font-size: var(--fs-11);
+  font-weight: 700;
+}
+
+.journal-modal-close span {
+  font-size: var(--fs-20);
+  font-weight: 400;
+}
+
+.journal-modal-media {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.journal-modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journal-modal-content {
+  overflow-y: auto;
+  padding: 56px 48px 48px;
+}
+
+.journal-modal-content h2 {
+  margin: 0 0 16px;
+  font-size: var(--fs-32);
+  line-height: 1.25;
+  letter-spacing: -.035em;
+}
+
+.journal-modal-lead {
+  margin-bottom: 32px;
+  color: var(--gray-700);
+  font-size: var(--fs-16);
+  line-height: 1.7;
+}
+
+.journal-modal-body {
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.journal-modal-body h3 {
+  margin: 28px 0 10px;
+  font-size: var(--fs-18);
+}
+
+.journal-modal-body h3:first-child { margin-top: 0; }
+
+.journal-modal-body p,
+.journal-modal-body li {
+  color: var(--gray-700);
+  font-size: var(--fs-14);
+  line-height: 1.75;
+}
+
+.journal-modal-body ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+@media (max-width: 767px) {
+  .journal-modal-dialog {
+    grid-template-columns: 1fr;
+    width: calc(100% - 24px);
+    max-height: 92vh;
+    overflow-y: auto;
+  }
+
+  .journal-modal-media {
+    min-height: 0;
+    aspect-ratio: 1.35 / 1;
+  }
+
+  .journal-modal-content {
+    overflow: visible;
+    padding: 32px 20px 28px;
+  }
+
+  .journal-modal-content h2 { font-size: var(--fs-24); }
+}
