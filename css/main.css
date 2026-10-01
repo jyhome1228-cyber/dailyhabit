@@ -1012,3 +1012,6 @@
   font-size: var(--fs-13);
   line-height: 1.55;
 }
+
+/* Preserve square journal artwork */
+.journal-card-link .journal-visual { aspect-ratio: 1 / 1; }
