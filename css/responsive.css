@@ -269,3 +269,145 @@
     gap: var(--s3);
   }
 }
+
+
+@media (max-width: 767px) {
+  .header-inner.container {
+    padding-inline: 16px;
+  }
+
+  .hero-grid.container {
+    display: block;
+  }
+
+  .hero-visual,
+  .hero-copy-panel {
+    min-height: 360px;
+  }
+
+  .hero-copy-panel {
+    padding: 32px 24px;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .trust-grid > div:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .trust-grid > div:nth-child(-n+2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .routine-card-large {
+    border-right: 0;
+  }
+
+  .routine-small-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .routine-card-small:first-child {
+    border-right: 0;
+  }
+
+  .launch-product-grid,
+  .launch-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .launch-product-grid .product-card,
+  .launch-catalog-grid .catalog-card {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .launch-product-grid .product-card:last-child,
+  .launch-catalog-grid .catalog-card:last-child {
+    border-bottom: 0;
+  }
+
+  .launch-product-grid .product-meta,
+  .launch-product-grid .product-card > h3,
+  .launch-product-grid .product-card > p,
+  .launch-catalog-grid .catalog-meta,
+  .launch-catalog-grid .catalog-card > h3,
+  .launch-catalog-grid .catalog-card > p {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .product-head,
+  .journal-head,
+  .catalog-heading,
+  .journal-filter,
+  .page-section-soft .page-title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .standard-copy {
+    padding-left: 24px;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-card,
+  .article-card {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .journal-card:last-child,
+  .article-card:last-child {
+    border-bottom: 0;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .routine-detail-grid,
+  .category-grid,
+  .standard-list-four,
+  .brand-process {
+    grid-template-columns: 1fr;
+  }
+
+  .routine-detail-card,
+  .category-card,
+  .standard-list-four .standard-item,
+  .brand-process li {
+    border-right: 0;
+  }
+
+  .footer-main.container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-main > * {
+    min-height: auto;
+    padding: 32px 16px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .footer-main > .footer-column:nth-child(3) {
+    border-right: 0;
+  }
+
+  .footer-main > .footer-column:last-child {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-bottom.container {
+    padding: 20px 16px 24px;
+  }
+}
