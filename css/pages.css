@@ -1658,3 +1658,189 @@
 .about-slider-dots button.is-active {
   background: var(--red);
 }
+
+
+/* ===== FINAL LAYOUT QA / WELLIT-LIKE PAGE SYSTEM ===== */
+
+/* Short, centered page title band */
+.sub-hero {
+  display: flex;
+  min-height: 132px;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.sub-hero .container {
+  width: min(100%, 900px);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sub-hero h1 {
+  margin: 0;
+  color: var(--red);
+  font-size: var(--fs-32);
+}
+
+.sub-hero p:last-child {
+  max-width: 680px;
+  margin: 8px auto 0;
+}
+
+/* Common listing heading */
+.catalog-section,
+.journal-list-section,
+.category-list-section,
+.routine-list-section {
+  padding-top: 48px;
+  padding-bottom: 0;
+}
+
+.catalog-heading,
+.journal-filter,
+.category-list-section .page-title,
+.routine-list-section .page-title {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.catalog-heading .page-title,
+.journal-filter .page-title,
+.category-list-section .page-title,
+.routine-list-section .page-title {
+  margin-bottom: 12px;
+}
+
+.catalog-sort {
+  justify-content: center;
+  padding: 0;
+}
+
+.journal-filter nav {
+  justify-content: center;
+  padding: 0;
+}
+
+/* Full-bleed 4-column grids share identical edges */
+.catalog-section > .container,
+.journal-list-section > .container,
+.category-list-section > .container,
+.routine-list-section > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.launch-catalog-grid,
+.article-grid,
+.category-list-grid,
+.routine-detail-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* Product */
+.launch-catalog-grid .catalog-card {
+  min-width: 0;
+  padding: 0 24px 28px;
+  border-right: 1px solid var(--line);
+}
+
+.launch-catalog-grid .catalog-card:nth-child(4n) {
+  border-right: 0;
+}
+
+.launch-catalog-grid .catalog-visual {
+  aspect-ratio: 1.15 / 1;
+  margin-inline: -24px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Journal */
+.article-card {
+  min-width: 0;
+  padding: 0 24px 28px;
+  border-right: 1px solid var(--line);
+}
+
+.article-card:nth-child(4n) {
+  border-right: 0;
+}
+
+.article-thumb {
+  margin-inline: -24px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Category */
+.category-list-card {
+  min-width: 0;
+  padding: 0 24px 28px;
+  border-right: 1px solid var(--line);
+}
+
+.category-list-card:nth-child(4n) {
+  border-right: 0;
+}
+
+/* Routine — four panels, same rhythm as category */
+.routine-detail-card {
+  min-width: 0;
+  min-height: 340px;
+  padding: 28px 24px;
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: 0;
+}
+
+.routine-detail-card:nth-child(2n) {
+  border-right: 1px solid var(--line);
+}
+
+.routine-detail-card:nth-child(4n) {
+  border-right: 0;
+}
+
+.routine-detail-card h3 {
+  font-size: var(--fs-24);
+}
+
+/* Supporting content is centered, not full-bleed */
+.routine-process-section {
+  padding: 64px 0;
+}
+
+.routine-process-section > .container {
+  width: min(calc(100% - 48px), 1040px);
+  margin-inline: auto;
+}
+
+.routine-process-section .page-title {
+  text-align: center;
+}
+
+.process-grid {
+  width: 100%;
+}
+
+/* Pagination sits directly under product grid */
+.product-pagination {
+  padding: 32px 24px 48px;
+}
+
+/* Utility board keeps its centered 1040px template */
+.utility-content {
+  width: min(calc(100% - 48px), 1040px);
+}
