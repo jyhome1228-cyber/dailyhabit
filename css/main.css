@@ -933,3 +933,25 @@
   border-radius: 0;
   border-bottom: 1px solid var(--line);
 }
+
+
+/* ===== 4-COLUMN PRODUCT / JOURNAL GRID ===== */
+.launch-product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.launch-product-grid .product-card {
+  min-width: 0;
+}
+
+.journal-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.journal-card {
+  min-width: 0;
+}
+
+.journal-visual-4 {
+  background: var(--surface) !important;
+}
