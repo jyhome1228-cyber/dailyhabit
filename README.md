@@ -1,51 +1,70 @@
-# DAILYHABIT
+# daily.habit.
 
-**Better Habit, Better Life.**
+**Better Habit, Better Life**
 
-카페24 적용 전 디자인/퍼블리싱 검토를 위한 Dailyhabit 프론트엔드 프로토타입입니다.
+Cafe24 이전을 전제로 제작하는 Dailyhabit HTML/CSS/Vanilla JS 프론트엔드 프로토타입입니다.
 
-## 현재 구조
+## Design System
 
-- `index.html` — 메인 페이지
-- `css/common.css` — 공통 변수, 타이포그래피, 버튼, 레이아웃
-- `css/main.css` — 메인 페이지 스타일
-- `css/responsive.css` — 태블릿/모바일 반응형
-- `js/main.js` — 모바일 메뉴 등 최소 인터랙션
+- Desktop content width: **1280px**
+- Key color: **Red**
+- Primary: `#D92D20`
+- Deep Red: `#8F1D18`
+- Soft Red: `#F1D5D0`
+- Warm White: `#F8F6F2`
+- Main text: `#161616`
+- Font: Pretendard
+- Framework: 없음
 
-## 개발 원칙
+## Navigation
 
-- 프레임워크 없이 HTML/CSS/Vanilla JS 사용
-- 추후 카페24 스마트디자인으로 이전하기 쉬운 섹션 구조
-- 상품 영역은 임시 정적 마크업이며 카페24 적용 단계에서 상품진열 모듈로 교체
-- 이미지 영역은 현재 플레이스홀더이며 최종 비주얼 제작 후 실제 이미지로 교체
-- PC 최대 콘텐츠 폭 1320px
-- 모바일 반응형 포함
+- SHOP
+- ROUTINE
+- CATEGORY
+- JOURNAL
+- ABOUT
+- SEARCH / MY / CART
 
-## 메인 구성
+## Main Page
 
-1. Promotion Bar
+1. Top utility bar
 2. Header
-3. Hero
-4. Shop by Habit
-5. Dailyhabit Best
-6. Curated by Dailyhabit
-7. Daily Pick
-8. Brand Story
-9. New Habit
-10. Monthly Curation
-11. Daily Journal
-12. Newsletter
-13. Footer
+3. Split hero
+4. 4 brand standards
+5. Routine visual grid
+6. Product curation (4 x 2)
+7. Brand standard banner
+8. Journal
+9. Newsletter
+10. Footer
 
-## Cafe24 이전 예정
+## Files
 
-정적 프로토타입 확정 후 아래 영역을 Cafe24 모듈로 교체합니다.
+- `index.html` — Home
+- `shop.html` — Shop
+- `routine.html` — Routine
+- `category.html` — Category
+- `journal.html` — Journal
+- `about.html` — About
+- `css/common.css` — reset / tokens / header / footer
+- `css/main.css` — home styles
+- `css/pages.css` — subpage styles
+- `css/responsive.css` — responsive rules
+- `js/main.js` — mobile navigation, search overlay, basic UI
 
-- 상품 목록 / 가격 / 할인
+## Cafe24 Migration
+
+정적 디자인 확정 후 아래 영역을 Cafe24 모듈로 교체합니다.
+
+- 상품 리스트 / 상품 상세 / 가격 / 할인
 - 카테고리
-- 장바구니
-- 로그인 / 회원가입 / 마이페이지
 - 검색
-- 주문
+- 로그인 / 회원가입 / 마이페이지
+- 장바구니
+- 주문 / 결제
 - 리뷰 / Q&A
-- 이벤트 게시판
+- 게시판
+- 이벤트
+- 사업자 및 쇼핑몰 운영 정보
+
+HTML 섹션은 Cafe24 Smart Design으로 분리하기 쉽도록 독립적인 구조로 유지합니다.
