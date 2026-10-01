@@ -438,15 +438,14 @@
 }
 
 .product-bottle i::after {
-  content: "daily.habit.\A daily routine";
-  white-space: pre;
+  content: "";
   position: absolute;
-  top: var(--s3);
-  left: var(--s2);
-  color: #fff;
-  font-style: normal;
-  font-size: 7px;
-  line-height: 1.5;
+  top: var(--s4);
+  left: var(--s3);
+  width: 42px;
+  height: 2px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 8px 0 rgba(255,255,255,.55), 0 16px 0 rgba(255,255,255,.35);
 }
 
 .tone-2 { background: #f5e4e1; }
