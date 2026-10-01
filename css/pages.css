@@ -920,3 +920,17 @@
 .article-thumb::after {
   display: none !important;
 }
+
+
+/* Launch assortment: two products */
+.launch-catalog-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 640px;
+}
+
+@media (max-width: 767px) {
+  .launch-product-grid,
+  .launch-catalog-grid {
+    max-width: none;
+  }
+}
