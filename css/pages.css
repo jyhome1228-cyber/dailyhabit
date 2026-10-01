@@ -251,18 +251,13 @@
 }
 
 .catalog-bottle::after {
-  content: "daily.habit.\A daily routine";
-  white-space: pre;
+  content: "";
   position: absolute;
   top: var(--s8);
   left: var(--s2);
   width: 70px;
   height: 88px;
-  padding: var(--s3) var(--s2);
-  color: #fff;
   background: var(--red-deep);
-  font-size: 7px;
-  line-height: 1.5;
 }
 
 .catalog-tone-1 { background: #f5dad5; }
