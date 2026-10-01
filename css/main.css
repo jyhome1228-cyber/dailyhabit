@@ -720,3 +720,10 @@
 .product-visual::after {
   display: none !important;
 }
+
+
+/* Launch assortment: two products */
+.launch-product-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 640px;
+}
