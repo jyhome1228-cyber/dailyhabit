@@ -81,20 +81,22 @@ document.querySelectorAll('.product-filter button').forEach((button) => {
   });
 });
 
-/* Brand image rolling */
-document.querySelectorAll('[data-brand-slider]').forEach((slider) => {
-  const track = slider.querySelector('.brand-slider-track');
-  const slides = [...slider.querySelectorAll('.brand-slide')];
-  const dots = [...slider.querySelectorAll('.brand-slider-dots button')];
-  const prev = slider.querySelector('.brand-slider-prev');
-  const next = slider.querySelector('.brand-slider-next');
+
+
+/* About: five full-screen images rolling vertically */
+document.querySelectorAll('[data-about-slider]').forEach((slider) => {
+  const track = slider.querySelector('.about-slider-track');
+  const slides = [...slider.querySelectorAll('.about-slide')];
+  const dots = [...slider.querySelectorAll('.about-slider-dots button')];
   if (!track || slides.length < 2) return;
 
   let index = 0;
   let timer;
+  let wheelLocked = false;
+  let touchStartY = null;
 
   const render = () => {
-    track.style.transform = `translateX(-${index * 100}%)`;
+    track.style.transform = `translateY(-${index * 100}%)`;
     slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
     dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
   };
@@ -110,12 +112,34 @@ document.querySelectorAll('[data-brand-slider]').forEach((slider) => {
     timer = window.setInterval(() => go(index + 1), 5000);
   };
 
-  prev?.addEventListener('click', () => { go(index - 1); start(); });
-  next?.addEventListener('click', () => { go(index + 1); start(); });
-  dots.forEach((dot, i) => dot.addEventListener('click', () => { go(i); start(); }));
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      go(i);
+      start();
+    });
+  });
 
-  slider.addEventListener('mouseenter', stop);
-  slider.addEventListener('mouseleave', start);
+  slider.addEventListener('wheel', (event) => {
+    if (wheelLocked || Math.abs(event.deltaY) < 16) return;
+    wheelLocked = true;
+    go(index + (event.deltaY > 0 ? 1 : -1));
+    start();
+    window.setTimeout(() => { wheelLocked = false; }, 700);
+  }, { passive: true });
+
+  slider.addEventListener('touchstart', (event) => {
+    touchStartY = event.touches[0]?.clientY ?? null;
+    stop();
+  }, { passive: true });
+
+  slider.addEventListener('touchend', (event) => {
+    if (touchStartY === null) return start();
+    const endY = event.changedTouches[0]?.clientY ?? touchStartY;
+    const distance = touchStartY - endY;
+    if (Math.abs(distance) > 40) go(index + (distance > 0 ? 1 : -1));
+    touchStartY = null;
+    start();
+  }, { passive: true });
 
   render();
   start();
