@@ -80,3 +80,43 @@ document.querySelectorAll('.product-filter button').forEach((button) => {
     button.classList.add('is-active');
   });
 });
+
+/* Brand image rolling */
+document.querySelectorAll('[data-brand-slider]').forEach((slider) => {
+  const track = slider.querySelector('.brand-slider-track');
+  const slides = [...slider.querySelectorAll('.brand-slide')];
+  const dots = [...slider.querySelectorAll('.brand-slider-dots button')];
+  const prev = slider.querySelector('.brand-slider-prev');
+  const next = slider.querySelector('.brand-slider-next');
+  if (!track || slides.length < 2) return;
+
+  let index = 0;
+  let timer;
+
+  const render = () => {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
+    dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+  };
+
+  const go = (nextIndex) => {
+    index = (nextIndex + slides.length) % slides.length;
+    render();
+  };
+
+  const stop = () => window.clearInterval(timer);
+  const start = () => {
+    stop();
+    timer = window.setInterval(() => go(index + 1), 5000);
+  };
+
+  prev?.addEventListener('click', () => { go(index - 1); start(); });
+  next?.addEventListener('click', () => { go(index + 1); start(); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { go(i); start(); }));
+
+  slider.addEventListener('mouseenter', stop);
+  slider.addEventListener('mouseleave', start);
+
+  render();
+  start();
+});
