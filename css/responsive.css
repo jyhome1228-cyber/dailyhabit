@@ -267,8 +267,6 @@
     left: 6px;
     width: 56px;
     height: 68px;
-    padding: var(--s2) 6px;
-    font-size: 5px;
   }
 
   .standard-banner { min-height: 440px; }
