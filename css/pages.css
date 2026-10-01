@@ -1301,3 +1301,31 @@
     min-width: 620px;
   }
 }
+
+
+/* ===== 4-COLUMN SHOP / JOURNAL GRID ===== */
+.launch-catalog-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.article-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.article-card {
+  border-right: 1px solid var(--line);
+}
+
+.article-card:nth-child(3n) {
+  border-right: 1px solid var(--line);
+}
+
+.article-card:nth-child(4n) {
+  border-right: 0;
+}
+
+/* Brand rolling belongs near the bottom of the brand story */
+.brand-rolling {
+  margin-top: 0;
+  border-top: 1px solid var(--line);
+}
