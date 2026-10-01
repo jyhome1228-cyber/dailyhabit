@@ -479,3 +479,26 @@ select:focus-visible {
   font-size: var(--fs-11);
   font-weight: 600;
 }
+
+/* Official logo asset */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.site-logo img {
+  display: block;
+  width: 118px;
+  height: auto;
+}
+
+.footer-logo img {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 767px) {
+  .site-logo img {
+    width: 104px;
+  }
+}
