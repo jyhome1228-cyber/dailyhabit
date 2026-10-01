@@ -411,3 +411,42 @@
     padding: 20px 16px 24px;
   }
 }
+
+
+@media (max-width: 1023px) {
+  .launch-product-grid,
+  .launch-catalog-grid,
+  .journal-grid,
+  .article-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journal-card:nth-child(2n),
+  .article-card:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .journal-card:nth-child(2n + 1),
+  .article-card:nth-child(2n + 1) {
+    border-right: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 767px) {
+  .launch-product-grid,
+  .launch-catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journal-grid,
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-card,
+  .article-card,
+  .journal-card:nth-child(2n + 1),
+  .article-card:nth-child(2n + 1) {
+    border-right: 0;
+  }
+}
