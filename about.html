@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Better Habit, Better Life. 데일리해빗의 브랜드 철학과 큐레이션 기준을 소개합니다.">
   <title>ABOUT — daily.habit.</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
@@ -14,13 +15,17 @@
   <div class="topbar">
     <div class="topbar-inner container">
       <p>BETTER HABIT, BETTER LIFE — 더 나은 습관이 더 나은 삶을 만듭니다.</p>
-      <nav class="topbar-links"><a href="./about.html">BRAND</a><a href="./journal.html">JOURNAL</a><a href="#">LOGIN</a></nav>
+      <nav class="topbar-links" aria-label="빠른 메뉴">
+        <a href="./about.html">BRAND</a>
+        <a href="./journal.html">JOURNAL</a>
+        <a href="#">LOGIN</a>
+      </nav>
     </div>
   </div>
 
   <header class="site-header">
     <div class="header-inner container">
-      <a class="site-logo" href="./index.html"><span>daily.</span>habit.</a>
+      <a class="site-logo" href="./index.html" aria-label="데일리해빗 홈"><span>daily.</span>habit.</a>
       <nav class="desktop-nav" aria-label="주요 메뉴">
         <a class="nav-link" href="./shop.html">SHOP</a>
         <a class="nav-link" href="./routine.html">ROUTINE</a>
@@ -35,10 +40,19 @@
         <button class="mobile-menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
       </div>
     </div>
+
     <div class="mobile-menu" aria-hidden="true">
       <div class="mobile-menu-inner">
-        <a href="./shop.html">SHOP</a><a href="./routine.html">ROUTINE</a><a href="./category.html">CATEGORY</a><a href="./journal.html">JOURNAL</a><a href="./about.html">ABOUT</a>
-        <div class="mobile-utility"><button class="search-open" type="button">SEARCH</button><a href="#">MY PAGE</a><a href="#">CART</a></div>
+        <a href="./shop.html">SHOP</a>
+        <a href="./routine.html">ROUTINE</a>
+        <a href="./category.html">CATEGORY</a>
+        <a href="./journal.html">JOURNAL</a>
+        <a href="./about.html">ABOUT</a>
+        <div class="mobile-utility">
+          <button class="search-open" type="button">SEARCH</button>
+          <a href="#">MY PAGE</a>
+          <a href="#">CART</a>
+        </div>
       </div>
     </div>
   </header>
@@ -47,8 +61,11 @@
     <button class="search-close" type="button">CLOSE</button>
     <form class="search-form">
       <label for="siteSearch">SEARCH</label>
-      <div class="search-input-wrap"><input id="siteSearch" type="search" placeholder="검색어를 입력해주세요."><button type="submit">→</button></div>
-      <p>상품명, 기능 또는 루틴으로 검색해보세요.</p>
+      <div class="search-input-wrap">
+        <input id="siteSearch" type="search" placeholder="검색어를 입력해주세요.">
+        <button type="submit" aria-label="검색">→</button>
+      </div>
+      <p>상품명, 카테고리 또는 루틴으로 검색해보세요.</p>
     </form>
   </div>
 
@@ -57,12 +74,80 @@
       <div class="container">
         <p class="eyebrow">BETTER HABIT, BETTER LIFE</p>
         <h1>ABOUT</h1>
-        <p>더 나은 습관이 더 나은 삶을 만든다는 믿음으로 시작한 라이프 큐레이션 브랜드입니다.</p>
+        <p>더 나은 습관이 더 나은 삶을 만든다는 믿음으로, 제품보다 선택의 기준과 지속 가능한 일상을 먼저 생각합니다.</p>
       </div>
     </section>
-    <section class="page-section"><div class="container about-intro"><div><p class="eyebrow">BRAND IDENTITY</p><h2>좋은 제품은 일상을 바꾸고,<br>좋은 습관은 삶을 바꿉니다.</h2></div><div class="about-copy"><p>데일리해빗은 단순히 제품을 판매하는 쇼핑몰이 아닙니다. 직접 경험하고, 충분히 검증한 제품만 엄선하여 소개하며 건강한 습관과 아름다운 일상을 만들어가는 라이프 큐레이션 브랜드입니다.</p><p>좋은 제품은 일상을 바꾸고, 좋은 습관은 삶을 바꾼다는 믿음으로 고객의 매일이 더 건강하고 더 아름다워질 수 있도록 함께합니다.</p></div></div></section>
-<section class="page-section page-section-soft"><div class="container"><div class="page-title"><p class="eyebrow">OUR STANDARD</p><h2>Dailyhabit Selection Standard</h2></div><div class="standard-list"><article class="standard-item"><span>01</span><h3>EXPERIENCE</h3><p>먼저 직접 경험하고 확인합니다.</p></article><article class="standard-item"><span>02</span><h3>SELECT</h3><p>제품의 정보와 기준을 충분히 살펴봅니다.</p></article><article class="standard-item"><span>03</span><h3>CURATE</h3><p>매일 지속할 가치가 있는 제품만 소개합니다.</p></article></div></div></section>
-<section class="about-slogan"><div class="container"><h2>Better Habit,<br>Better Life.</h2><p>더 나은 습관이 더 나은 삶을 만듭니다.</p></div></section>
+    
+<section class="page-section brand-intro-section">
+  <div class="container about-intro">
+    <div>
+      <p class="eyebrow">BRAND IDENTITY</p>
+      <h2>좋은 제품은 일상을 바꾸고,<br>좋은 습관은 삶을 바꿉니다.</h2>
+    </div>
+    <div class="about-copy">
+      <p>데일리해빗은 단순히 제품을 판매하는 쇼핑몰이 아닙니다.</p>
+      <p>직접 경험하고 충분히 살펴본 제품을 엄선하여 소개하고, 고객이 자신의 생활에 맞는 좋은 습관을 만들어갈 수 있도록 돕는 <strong>라이프 큐레이션 브랜드</strong>입니다.</p>
+      <p>우리는 더 많은 제품을 권하기보다 왜 필요한지 이해하고, 오래 이어갈 수 있는 선택을 하는 것이 더 중요하다고 생각합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="brand-belief">
+  <div class="container brand-belief-grid">
+    <div class="brand-belief-title">
+      <p class="eyebrow">OUR BELIEF</p>
+      <h2>Better Habit,<br>Better Life.</h2>
+    </div>
+    <div class="belief-list">
+      <article><span>01</span><div><strong>Better Choice</strong><p>정보를 이해하고 나에게 필요한 제품을 선택합니다.</p></div></article>
+      <article><span>02</span><div><strong>Better Habit</strong><p>무리하지 않고 매일 이어갈 수 있는 방식으로 만듭니다.</p></div></article>
+      <article><span>03</span><div><strong>Better Life</strong><p>작은 습관이 더 나은 일상으로 이어진다고 믿습니다.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="page-section page-section-soft" id="standard">
+  <div class="container">
+    <div class="page-title">
+      <p class="eyebrow">OUR STANDARD</p>
+      <h2>무엇을 소개할지보다<br>어떤 기준으로 고를지를 먼저 생각합니다.</h2>
+      <p>제품을 소개할 때 데일리해빗이 중요하게 보는 네 가지 기준입니다.</p>
+    </div>
+
+    <div class="standard-list standard-list-four">
+      <article class="standard-item"><span>01</span><h3>EXPERIENCE</h3><p>제품을 실제 사용 또는 경험하는 과정에서 일상에 자연스럽게 이어질 수 있는지 살펴봅니다.</p></article>
+      <article class="standard-item"><span>02</span><h3>UNDERSTAND</h3><p>제품 정보와 사용 방법을 이해하기 쉽게 정리할 수 있는지 확인합니다.</p></article>
+      <article class="standard-item"><span>03</span><h3>SELECT</h3><p>비슷한 선택지 사이에서 소개할 이유가 분명한 제품을 고릅니다.</p></article>
+      <article class="standard-item"><span>04</span><h3>CURATE</h3><p>단일 제품이 아니라 고객의 일상과 루틴 안에서 어떻게 활용될지 함께 제안합니다.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="page-section brand-process-section">
+  <div class="container">
+    <div class="page-title">
+      <p class="eyebrow">HOW WE CURATE</p>
+      <h2>발견에서 추천까지</h2>
+      <p>데일리해빗의 큐레이션은 제품을 찾는 것에서 끝나지 않습니다.</p>
+    </div>
+
+    <ol class="brand-process">
+      <li><span>01</span><strong>DISCOVER</strong><p>일상에 필요한 제품과 새로운 선택지를 발견합니다.</p></li>
+      <li><span>02</span><strong>REVIEW</strong><p>제품의 정보와 사용 경험을 여러 관점에서 살펴봅니다.</p></li>
+      <li><span>03</span><strong>SELECT</strong><p>데일리해빗의 기준과 방향에 맞는 제품을 선택합니다.</p></li>
+      <li><span>04</span><strong>CURATE</strong><p>고객이 쉽게 이해하고 선택할 수 있도록 루틴과 정보로 정리합니다.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about-slogan">
+  <div class="container">
+    <p class="eyebrow">DAILYHABIT</p>
+    <h2>Better Habit,<br>Better Life.</h2>
+    <p>더 나은 습관이 더 나은 삶을 만듭니다.</p>
+    <a href="./shop.html">SHOP DAILYHABIT →</a>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -70,13 +155,38 @@
       <div class="footer-brand">
         <a class="site-logo footer-logo" href="./index.html"><span>daily.</span>habit.</a>
         <p>Better Habit, Better Life</p>
-        <div class="footer-contact"><span>CONTACT</span><p>hello@dailyhabit.kr<br>02-1234-5678<br>MON-FRI 10:00–17:00</p></div>
+        <div class="footer-contact">
+          <span>CONTACT</span>
+          <p>hello@dailyhabit.kr<br>02-1234-5678<br>MON-FRI 10:00–17:00</p>
+        </div>
       </div>
-      <div class="footer-column"><strong>SHOP</strong><a href="./shop.html">ALL PRODUCTS</a><a href="./category.html">BALANCE</a><a href="./category.html">BEAUTY</a><a href="./category.html">REST &amp; RECOVERY</a></div>
-      <div class="footer-column"><strong>ABOUT</strong><a href="./about.html">BRAND STORY</a><a href="./about.html">OUR STANDARD</a><a href="./journal.html">JOURNAL</a><a href="#">FAQ</a></div>
-      <div class="footer-column"><strong>SUPPORT</strong><a href="#">NOTICE</a><a href="#">DELIVERY &amp; RETURN</a><a href="#">PRIVACY POLICY</a><a href="#">TERMS OF USE</a></div>
+      <div class="footer-column">
+        <strong>SHOP</strong>
+        <a href="./shop.html">ALL PRODUCTS</a>
+        <a href="./category.html">BALANCE</a>
+        <a href="./category.html">BEAUTY</a>
+        <a href="./category.html">REST &amp; INNER CARE</a>
+      </div>
+      <div class="footer-column">
+        <strong>ABOUT</strong>
+        <a href="./about.html">BRAND STORY</a>
+        <a href="./about.html#standard">OUR STANDARD</a>
+        <a href="./journal.html">JOURNAL</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-column">
+        <strong>SUPPORT</strong>
+        <a href="#">NOTICE</a>
+        <a href="#">DELIVERY &amp; RETURN</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">TERMS OF USE</a>
+      </div>
     </div>
-    <div class="container footer-bottom"><p>상호명 DAILYHABIT · 대표자 정보 · 사업자등록번호 · 통신판매업신고 · 주소</p><div class="footer-social"><a href="#">INSTAGRAM</a><a href="#">KAKAO</a><a href="#">YOUTUBE</a></div><p>© DAILYHABIT. ALL RIGHTS RESERVED.</p></div>
+    <div class="container footer-bottom">
+      <p>상호명 DAILYHABIT · 대표자 정보 · 사업자등록번호 · 통신판매업신고 · 주소</p>
+      <div class="footer-social"><a href="#">INSTAGRAM</a><a href="#">KAKAO</a><a href="#">YOUTUBE</a></div>
+      <p>© DAILYHABIT. ALL RIGHTS RESERVED.</p>
+    </div>
   </footer>
 
   <script src="./js/main.js"></script>
