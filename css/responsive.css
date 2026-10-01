@@ -4,162 +4,7 @@
   :root { --gutter: 24px; }
 
   .hero-copy-panel { padding: var(--s8); }
-  .hero-shape-circle { left: 72px; }
-  .hero-shape-capsule { right: 72px; }
-}
 
-@media (max-width: 767px) {
-  :root {
-    --gutter: 16px;
-    --topbar-h: 30px;
-    --header-h: 62px;
-  }
-
-  body {
-    font-size: var(--fs-14);
-  }
-
-  .section,
-  .page-section {
-    padding: var(--s11) 0;
-  }
-
-  .topbar-links,
-  .desktop-nav,
-  .header-utils .utility-button,
-  .header-utils .utility-link {
-    display: none;
-  }
-
-  .topbar p {
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
-  .header-inner { grid-template-columns: 1fr auto; }
-
-  .site-logo { font-size: var(--fs-20); }
-
-  .mobile-menu-button {
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 6px;
-  }
-
-  .mobile-menu-button span {
-    width: 24px;
-    height: 1px;
-    background: var(--black);
-    transition: .18s ease;
-  }
-
-  .mobile-menu-button[aria-expanded="true"] span:first-child {
-    transform: translateY(3.5px) rotate(45deg);
-  }
-
-  .mobile-menu-button[aria-expanded="true"] span:last-child {
-    transform: translateY(-3.5px) rotate(-45deg);
-  }
-
-  .mobile-menu {
-    position: fixed;
-    z-index: 90;
-    top: calc(var(--topbar-h) + var(--header-h));
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-8px);
-    background: #fff;
-    transition: .18s ease;
-    pointer-events: none;
-    overflow-y: auto;
-  }
-
-  .mobile-menu.is-open {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .mobile-menu-inner {
-    display: flex;
-    flex-direction: column;
-    padding: var(--s7) var(--gutter) var(--s9);
-  }
-
-  .mobile-menu-inner > a {
-    padding: var(--s2) 0;
-    font-size: var(--fs-28);
-    font-weight: 700;
-    line-height: 1.25;
-  }
-
-  .mobile-utility {
-    display: flex;
-    gap: var(--s5);
-    margin-top: var(--s7);
-    padding-top: var(--s4);
-    border-top: 1px solid var(--line);
-  }
-
-  .mobile-utility button,
-  .mobile-utility a {
-    min-height: 32px;
-    color: var(--red);
-    font-size: var(--fs-12);
-    font-weight: 700;
-  }
-
-  .search-layer {
-    align-items: flex-start;
-    padding: var(--s14) var(--s5) var(--s8);
-  }
-
-  .search-close {
-    top: var(--s5);
-    right: var(--s5);
-  }
-
-  /* Home */
-  .main-hero { padding-top: var(--s4); }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: var(--s4);
-    min-height: 0;
-  }
-
-  .hero-visual,
-  .hero-copy-panel {
-    grid-column: auto;
-  }
-
-  .hero-visual { min-height: 360px; }
-
-  .hero-shape-circle {
-    width: 220px;
-    height: 220px;
-    top: 72px;
-    left: 40px;
-  }
-
-  .hero-shape-capsule {
-    width: 72px;
-    height: 148px;
-    top: 148px;
-    right: 40px;
-  }
 
   .hero-copy-panel {
     min-height: 360px;
@@ -241,33 +86,7 @@
     gap: var(--s8) var(--s3);
   }
 
-  .product-bottle,
-  .catalog-bottle {
-    width: 68px;
-    height: 128px;
-  }
 
-  .product-bottle::before,
-  .catalog-bottle::before {
-    top: -16px;
-    left: 10px;
-    width: 46px;
-    height: 16px;
-  }
-
-  .product-bottle i {
-    top: var(--s7);
-    left: 6px;
-    width: 56px;
-    height: 68px;
-  }
-
-  .catalog-bottle::after {
-    top: var(--s7);
-    left: 6px;
-    width: 56px;
-    height: 68px;
-  }
 
   .standard-banner { min-height: 440px; }
 
@@ -281,19 +100,7 @@
     bottom: var(--s6);
   }
 
-  .standard-orb {
-    width: 280px;
-    height: 280px;
-    right: -88px;
-  }
 
-  .standard-capsule {
-    width: 64px;
-    height: 132px;
-    right: 48px;
-    top: auto;
-    bottom: 72px;
-  }
 
   .journal-grid,
   .article-grid {
@@ -412,18 +219,7 @@
 
   .featured-visual { min-height: 300px; }
 
-  .featured-card {
-    right: var(--s7);
-    bottom: var(--s9);
-    width: 152px;
-    height: 96px;
-    font-size: var(--fs-16);
-  }
 
-  .featured-capsule {
-    left: var(--s9);
-    bottom: var(--s8);
-  }
 
   .featured-copy {
     padding: var(--s6);
