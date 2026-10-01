@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHOP — DAILYHABIT</title>
+  <title>SHOP — daily.habit.</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link rel="stylesheet" href="./css/common.css">
@@ -11,30 +11,23 @@
   <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-  <div class="top-banner"><a href="./event.html">WELCOME TO DAILYHABIT · 신규 회원 혜택 보기</a></div>
+  <div class="topbar">
+    <div class="topbar-inner container">
+      <p>BETTER HABIT, BETTER LIFE — 더 나은 습관이 더 나은 삶을 만듭니다.</p>
+      <nav class="topbar-links"><a href="./about.html">BRAND</a><a href="./journal.html">JOURNAL</a><a href="#">LOGIN</a></nav>
+    </div>
+  </div>
 
-  <header class="site-header" id="siteHeader">
+  <header class="site-header">
     <div class="header-inner container">
-      <a class="site-logo" href="./index.html">DAILYHABIT</a>
-
+      <a class="site-logo" href="./index.html"><span>daily.</span>habit.</a>
       <nav class="desktop-nav" aria-label="주요 메뉴">
-        <div class="nav-item has-dropdown">
-          <a class="nav-link" aria-current="page" href="./shop.html">SHOP</a>
-          <div class="dropdown"><div class="dropdown-inner">
-            <a href="./shop.html">ALL</a><a href="./shop.html?category=health">HEALTH</a><a href="./shop.html?category=beauty">BEAUTY</a><a href="./shop.html?category=body">BODY</a><a href="./shop.html?category=lifestyle">LIFESTYLE</a>
-          </div></div>
-        </div>
-        <div class="nav-item"><a class="nav-link" href="./best.html">BEST</a></div>
-        <div class="nav-item has-dropdown">
-          <a class="nav-link" href="./curation.html">CURATION</a>
-          <div class="dropdown"><div class="dropdown-inner">
-            <a href="./curation.html">DAILY PICK</a><a href="./curation.html#monthly">MONTHLY HABIT</a><a href="./curation.html#journal">DAILY JOURNAL</a>
-          </div></div>
-        </div>
-        <div class="nav-item"><a class="nav-link" href="./brand.html">BRAND</a></div>
-        <div class="nav-item"><a class="nav-link" href="./event.html">EVENT</a></div>
+        <a class="nav-link" aria-current="page" href="./shop.html">SHOP</a>
+        <a class="nav-link" href="./routine.html">ROUTINE</a>
+        <a class="nav-link" href="./category.html">CATEGORY</a>
+        <a class="nav-link" href="./journal.html">JOURNAL</a>
+        <a class="nav-link" href="./about.html">ABOUT</a>
       </nav>
-
       <div class="header-utils">
         <button class="utility-button search-open" type="button">SEARCH</button>
         <a class="utility-link" href="#">MY</a>
@@ -42,12 +35,9 @@
         <button class="mobile-menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
       </div>
     </div>
-
     <div class="mobile-menu" aria-hidden="true">
       <div class="mobile-menu-inner">
-        <a href="./shop.html">SHOP</a>
-        <div class="mobile-submenu"><a href="./shop.html">ALL</a><a href="./shop.html?category=health">HEALTH</a><a href="./shop.html?category=beauty">BEAUTY</a><a href="./shop.html?category=body">BODY</a><a href="./shop.html?category=lifestyle">LIFESTYLE</a></div>
-        <a href="./best.html">BEST</a><a href="./curation.html">CURATION</a><a href="./brand.html">BRAND</a><a href="./event.html">EVENT</a>
+        <a href="./shop.html">SHOP</a><a href="./routine.html">ROUTINE</a><a href="./category.html">CATEGORY</a><a href="./journal.html">JOURNAL</a><a href="./about.html">ABOUT</a>
         <div class="mobile-utility"><button class="search-open" type="button">SEARCH</button><a href="#">MY PAGE</a><a href="#">CART</a></div>
       </div>
     </div>
@@ -58,34 +48,74 @@
     <form class="search-form">
       <label for="siteSearch">SEARCH</label>
       <div class="search-input-wrap"><input id="siteSearch" type="search" placeholder="검색어를 입력해주세요."><button type="submit">→</button></div>
-      <p>상품명 또는 키워드로 검색해보세요.</p>
+      <p>상품명, 기능 또는 루틴으로 검색해보세요.</p>
     </form>
   </div>
 
   <main>
-    <section class="page-hero">
+    <section class="sub-hero">
       <div class="container">
         <p class="eyebrow">DAILYHABIT SHOP</p>
         <h1>SHOP</h1>
-        <p>건강하고 아름다운 일상을 위한 데일리해빗의 큐레이션을 만나보세요.</p>
+        <p>직접 경험하고 충분히 살펴본 제품만 골라 소개합니다.</p>
       </div>
     </section>
-
-    <section class="page-placeholder">
-      <div class="container">
-        <div class="page-placeholder-box">SHOP CONTENT AREA</div>
-      </div>
-    </section>
+    <nav class="sub-nav"><div class="container sub-nav-inner"><a class="is-active" href="#">ALL</a><a href="#">BALANCE</a><a href="#">BEAUTY</a><a href="#">REST</a><a href="#">INNER CARE</a></div></nav>
+<section class="page-section"><div class="container"><div class="page-title"><h2>ALL PRODUCTS</h2><p>데일리해빗의 전체 셀렉션입니다.</p></div><div class="catalog-grid"><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>BALANCE</span><strong>₩29,000</strong></div>
+    <h3><a href="#">DAILY BALANCE</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>FOCUS</span><strong>₩32,000</strong></div>
+    <h3><a href="#">CLEAR FOCUS</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>BEAUTY</span><strong>₩34,000</strong></div>
+    <h3><a href="#">INNER GLOW</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>REST</span><strong>₩31,000</strong></div>
+    <h3><a href="#">GOOD NIGHT</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>BALANCE</span><strong>₩28,000</strong></div>
+    <h3><a href="#">LIGHT DAY</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>INNER CARE</span><strong>₩33,000</strong></div>
+    <h3><a href="#">GUT ROUTINE</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>VITALITY</span><strong>₩36,000</strong></div>
+    <h3><a href="#">VITALITY +</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article><article class="catalog-card">
+    <a class="catalog-visual" href="#"><span class="catalog-bottle"></span></a>
+    <div class="catalog-meta"><span>ESSENTIAL</span><strong>₩27,000</strong></div>
+    <h3><a href="#">DAILY ESSENTIAL</a></h3>
+    <p>데일리해빗이 선택한 건강 루틴</p>
+  </article></div></div></section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand"><a class="site-logo footer-logo" href="./index.html">DAILYHABIT</a><p>Better Habit, Better Life.</p></div>
-      <div class="footer-column"><strong>SHOP</strong><a href="./shop.html">ALL</a><a href="./best.html">BEST</a><a href="./event.html">EVENT</a></div>
-      <div class="footer-column"><strong>ABOUT</strong><a href="./brand.html">BRAND</a><a href="./curation.html">CURATION</a></div>
-      <div class="footer-column"><strong>SUPPORT</strong><a href="#">NOTICE</a><a href="#">FAQ</a><a href="#">Q&amp;A</a></div>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="site-logo footer-logo" href="./index.html"><span>daily.</span>habit.</a>
+        <p>Better Habit, Better Life</p>
+        <div class="footer-contact"><span>CONTACT</span><p>hello@dailyhabit.kr<br>02-1234-5678<br>MON-FRI 10:00–17:00</p></div>
+      </div>
+      <div class="footer-column"><strong>SHOP</strong><a href="./shop.html">ALL PRODUCTS</a><a href="./category.html">BALANCE</a><a href="./category.html">BEAUTY</a><a href="./category.html">REST &amp; RECOVERY</a></div>
+      <div class="footer-column"><strong>ABOUT</strong><a href="./about.html">BRAND STORY</a><a href="./about.html">OUR STANDARD</a><a href="./journal.html">JOURNAL</a><a href="#">FAQ</a></div>
+      <div class="footer-column"><strong>SUPPORT</strong><a href="#">NOTICE</a><a href="#">DELIVERY &amp; RETURN</a><a href="#">PRIVACY POLICY</a><a href="#">TERMS OF USE</a></div>
     </div>
-    <div class="container footer-bottom"><p>회사 정보 · 대표자 · 사업자등록번호 · 통신판매업신고 · 주소 · 고객센터 · 이메일</p><p>© DAILYHABIT. ALL RIGHTS RESERVED.</p></div>
+    <div class="container footer-bottom"><p>상호명 DAILYHABIT · 대표자 정보 · 사업자등록번호 · 통신판매업신고 · 주소</p><div class="footer-social"><a href="#">INSTAGRAM</a><a href="#">KAKAO</a><a href="#">YOUTUBE</a></div><p>© DAILYHABIT. ALL RIGHTS RESERVED.</p></div>
   </footer>
 
   <script src="./js/main.js"></script>
