@@ -1329,3 +1329,172 @@
   margin-top: 0;
   border-top: 1px solid var(--line);
 }
+
+
+/* ===== WELLIT-LIKE SUBPAGE ALIGNMENT ===== */
+
+/* General subpage title band */
+.sub-hero {
+  padding: 40px 24px 36px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.sub-hero .container {
+  width: min(100%, 1040px);
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sub-hero .eyebrow {
+  display: none;
+}
+
+.sub-hero h1 {
+  margin: 0 0 10px;
+  color: var(--red);
+  font-size: var(--fs-32);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+.sub-hero p:last-child {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--gray-500);
+  font-size: var(--fs-13);
+  line-height: 1.55;
+}
+
+/* All secondary section headings share one centered axis */
+.page-title {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.page-title .eyebrow {
+  margin-bottom: 8px;
+}
+
+.page-title h2 {
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  margin-inline: auto;
+}
+
+/* Shop */
+.catalog-section {
+  padding: 56px 0 0;
+}
+
+.catalog-heading {
+  display: block;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.catalog-heading .page-title {
+  margin-bottom: 16px;
+}
+
+.catalog-sort {
+  justify-content: center;
+  padding: 0 0 32px;
+}
+
+/* Journal */
+.journal-filter {
+  display: block;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.journal-filter .page-title {
+  margin-bottom: 16px;
+}
+
+.journal-filter nav {
+  justify-content: center;
+  padding: 0 0 32px;
+}
+
+/* Routine / Category */
+.page-section-soft .page-title,
+.page-section > .container > .page-title {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section-soft {
+  padding-top: 56px;
+}
+
+.page-section:not(.catalog-section) {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* Keep full-width grids directly below centered headings */
+.page-section-soft > .container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.page-section-soft > .container > .page-title {
+  max-width: 760px;
+}
+
+/* Process / supporting sections still align centrally before their grids */
+.process-grid,
+.selection-points {
+  width: min(calc(100% - 48px), 1280px);
+  margin-inline: auto;
+}
+
+/* CTA text should also resolve around the page center, not a left floating block */
+.choice-cta-inner {
+  width: min(calc(100% - 48px), 1040px);
+  margin-inline: auto;
+}
+
+/* Notice / utility remains centered */
+.utility-hero {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .sub-hero {
+    padding: 32px 16px 28px;
+  }
+
+  .sub-hero h1 {
+    font-size: var(--fs-28);
+  }
+
+  .sub-hero p:last-child {
+    font-size: var(--fs-12);
+  }
+
+  .catalog-heading,
+  .journal-filter,
+  .page-section-soft .page-title,
+  .page-section > .container > .page-title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .process-grid,
+  .selection-points,
+  .choice-cta-inner {
+    width: calc(100% - 32px);
+  }
+}
