@@ -934,3 +934,159 @@
     max-width: none;
   }
 }
+
+
+/* ===== SUBPAGES / FULL-BLEED COMMERCE OVERRIDES ===== */
+
+.sub-hero {
+  padding: 72px 0 56px;
+}
+
+.sub-hero .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-inline: 32px;
+}
+
+.catalog-section {
+  padding: 72px 0 0;
+}
+
+.catalog-section > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-heading {
+  padding: 0 32px;
+}
+
+.launch-catalog-grid {
+  max-width: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.launch-catalog-grid .catalog-card {
+  padding-bottom: 32px;
+  border-right: 1px solid var(--line);
+}
+
+.launch-catalog-grid .catalog-card:last-child {
+  border-right: 0;
+}
+
+.launch-catalog-grid .catalog-visual {
+  aspect-ratio: 1.35 / 1;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.launch-catalog-grid .catalog-meta,
+.launch-catalog-grid .catalog-card > h3,
+.launch-catalog-grid .catalog-card > p {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* Journal list: full-width editorial grid */
+.journal-filter {
+  padding: 0 32px;
+}
+
+.article-grid {
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.article-card {
+  padding: 0 24px 32px;
+  border-right: 1px solid var(--line);
+}
+
+.article-card:nth-child(3n) {
+  border-right: 0;
+}
+
+.article-thumb {
+  margin-inline: -24px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Routine, Category, About panels */
+.page-section-soft {
+  background: var(--white);
+  padding-bottom: 0;
+}
+
+.page-section-soft > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-section-soft .page-title {
+  padding: 0 32px;
+}
+
+.routine-detail-grid,
+.category-grid {
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.routine-detail-card,
+.category-card {
+  min-height: 360px;
+  border-radius: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.routine-detail-card:nth-child(2n),
+.category-card:nth-child(2n) {
+  border-right: 0;
+}
+
+.standard-list-four {
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.standard-list-four .standard-item {
+  border-radius: 0;
+  border-right: 1px solid var(--line);
+}
+
+.standard-list-four .standard-item:last-child {
+  border-right: 0;
+}
+
+.brand-process {
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-process li {
+  border-radius: 0;
+  border-right: 1px solid var(--line);
+}
+
+.brand-process li:last-child {
+  border-right: 0;
+}
+
+.about-slogan {
+  border-radius: 0;
+}
